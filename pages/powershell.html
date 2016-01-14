@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content=text/html; charset="iso-8859-1"/>
+<script src="../test.js"></script>
+<link rel="StyleSheet" type="text/css" href="../style.css"/>
+<title>PowerShell</title>
+</head>
+<body>
+	<header>
+	<img src="../images/banner.jpg" alt="IT-Spesialisten">
+
+	<img src="../images/powershell.jpg" height="200" width="500" alt="PowerShell!">
+	<nav>
+	<ul>
+
+		<li class="tran"><a href= "../index.html">Hjem</a></li>
+		<li class="tran"><a href= "../pages/programering.html ">Programmering</a></li>
+		<li class="tran"><a href= "../pages/office.html">Office</a></li>
+		<li class="tran"><a href= "../pages/powershell.html">PowerShell</a></li>
+		<li class="tran"><a href= "../pages/tjenester.html">Tjenester</a></li>
+		<li class="tran"><a href= "../pages/artikler.html">Artikler</a></li>
+		<br>
+		<li>Tjenester er for tiden gratis, hvis du har opprettet en sak hos meg.</li>
+	</ul>
+	</nav>
+	<h1>START MED POWERSHELL</h1>
+	</header>
+		<section>
+	
+	
+	<section>
+		<article>
+		<hr>
+		<p><h3><strong>Hva er PowerShell?</strong></h3>Powershell er et verktøy som kommer med windows. Jeg vil her forklare hvordan du setter opp powershell på din maskin.
+		Du må du laste ned siste versjon av Microsoft .NET framework. Her er en link til Microsoft sin offisielle side:
+		<a href="http://www.microsoft.com/nb-no/download/details.aspx?id=30653">.NET framework 4.5</a> 
+		dette er for tiden den nyeste versjonen.
+		Gå på start menyen, velg alle programmer og velg tilbehør. Under mappen PowerShell vil du finne konsollen og noe som heter 
+		PowerShell_ISE. Vi må gjøre et par ting i powershell for å få det til å fungere som det skal. Det første du bør gjøre er å 
+		skrive "get-host" for å se vilken versjon av powershell du har. Har du versjon 4.0 er dette den nyeste per dags dato.
+		For at script kan kjøres på maskinen må du tillate dette ved å skrive "set-executionpolicy -executionpolicy remote-signed"
+		Det vil si at alle script som du har på maskinen, som er signert vil kjøre. Andre script som kan være potensiellt skadelige
+		kommer sansynligvis ikke få lov til å kjøre med denne policy. PowerShell brukes av administratorer for å gjøre forskjellige
+		oppgaver som kreves. Hvis samme oppgave må gjøres på flere maskiner eller gjøres ofte, bruker man det som kalles et 
+		PowerShell script. En samling av kommandoer eller cmdlets som det heter i PowerShell som lagres i en .ps1 fil. Jeg har lagt
+		en .ps1 fil i slutten av siste artikkel på denne siden. 
+		</p>
+		</article>
+		
+		<article>
+		<p><h3><strong>Verb-noun</strong></h3>
+		I PowerShell heter kommandoene cmdlets. Disse er satt sammen av et verb, og et noun (substantiv) f.eks: get-host, get-childitem, get-process osv.
+		legg merke til at det er entalls form i substantivet. Jeg har lagt ut et script som handler om dette og det finner du her: <a href="../PSScripts/verb-noun.ps1">verb-noun</a>
+		</p>
+		</article>
+		
+		<article>
+		<p><h3><strong>Finne fram og starte å bruke PowerShell</strong></h3>Videre er det lurt å opdatere hjelpe systemet i PowerShell. Dette er meget bra og microsoft har virkelig laget et kraftig
+		hjelpeverktøy for powershell. Kommandoene for hjelp er flere. Du kan bruke "help" eller "get-help". Det er viktig å forstå
+		strukturen på kommandoene. Kommandoer er et verb. Som "Get" og "set" som du vil se i alle kommandoer samt et substantiv som
+		"service" eller "process". Legg merke til at de bruker "process" og ikke "processes" selv om det er flere. Dette er en huske regel.
+		Men tilbake til hjelpe systemet. Det du kan gjøre er bare å skrive "update-help" så vil powershell koble seg på nettet og laste ned
+		de siste hjelpe filene. Du kan tilogmed få hjelp på nett, da skriver du f.eks "get-help get-help -online" som gir det hjelp om "get-help".
+		</p>
+		</article>
+		
+		<article>
+		<p><h3><strong>Litt hjelp på veien:</strong></h3>Har lagt ut en pdf jeg har skrevet om WMI (Windows management Instruments). Dette er for drevene PowerShell brukere og ikke for de som nettop har starta.
+		Hvis du lurer på noe eller har spørsmål så bare ta kontakt. Her er dette pdf: <a href="../pdf/PS_WMI.pdf">PowerShell WMI</a> Hvis du er 
+		interessert i å lære PowerShell kan jeg anbefale en bok som heter "PowerShell Step by Step 3.0" av Ed Wilson. Jeg har lagt ut et script som ordner
+		oppsett og hjelpesystem for deg, hvis du har problemer. Det finner du på denne lenken: <a href="../PSScripts/example.ps1"> Lenke til examples.ps1</a>
+		<br>For mer powershell gå til <a href="http://www.powershell.org>powershell.org"</a> 
+		</p>
+		</article>
+	</section>
+		<br>
+		<hr>
+
+	<hr>
+	<footer><a href="mailto:support@iktspesialisten.no?subject=Windows Support">Contact by email</a>  (c)Sigurd Skauvik 2014
+	<img src="../images/th.jpg" alt="Microsoft Certified Professional"></footer>
+
+</body>
+</html>
